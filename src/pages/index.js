@@ -10,6 +10,7 @@ export default function Home({ data }) {
     <>
       <div className="homepage-container">
         <h2>{SiteName}</h2>
+        <Link to="https://github.com/mcnaveen/gatsby-mdx-starter-blog" style={{ textDecoration: 'none' }}><b>✨ Source code ✨</b></Link>
 
         <div className="posts">
           {posts.map(post => {

@@ -5,6 +5,11 @@ Gatsby Starter Blog with Mdx support
 
 ![build-test](https://github.com/mcnaveen/gatsby-mdx-starter-blog/workflows/build-test/badge.svg)  
 
+![](./screenshot.png)
+
+### 🚀 Demo: [Click Here](https://gatsby-mdx-starter.netlify.app/)
+
+- Demo hosted on Netlify
 ### 🍨 Features:
 
 - [x] Gatsby
