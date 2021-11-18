@@ -1,10 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Helmet, HelmetProvider } from "react-helmet-async"
+
 
 export default function categoryLayout({ data, pageContext }) {
-    
+
   return (
     <>
+    <HelmetProvider>
+        <Helmet defer="false">
+          <title>{pageContext.category} Posts</title>
+          <meta name="description" content="Gatsby Mdx Starter Blog Categories"></meta>
+        </Helmet>
+      </HelmetProvider>
       <h3
         className="latest-from"
         style={{ marginLeft: "0px", color: "rgba(0, 0, 0, 0.8)" }}
@@ -16,8 +24,8 @@ export default function categoryLayout({ data, pageContext }) {
       <hr />
       <ul>
         {data.allMdx.nodes.map(post => (
-          <li key={post.id} className="title is-6">
-            <a href={post.fields.slug} title={post.frontmatter.title}>
+          <li key={post.id} className="title">
+            <a href={post.fields.slug} title={post.frontmatter.title} aria-label="Post Link in Category collection">
               {post.frontmatter.title}
             </a>
           </li>

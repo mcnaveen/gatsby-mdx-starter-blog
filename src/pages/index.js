@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 export default function Home({ data }) {
   const posts = data.allMdx.edges
@@ -8,19 +9,31 @@ export default function Home({ data }) {
   console.log(data.site.siteMetadata.description)
   return (
     <>
+      <HelmetProvider>
+        <Helmet defer="false">
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content="Gatsby Mdx Starter Blog"></meta>
+        </Helmet>
+      </HelmetProvider>
       <div className="homepage-container">
         <h2>{SiteName}</h2>
-        <Link to="https://github.com/mcnaveen/gatsby-mdx-starter-blog" style={{ textDecoration: 'none' }}><b>✨ Source code ✨</b></Link>
+        <Link
+          to="https://github.com/mcnaveen/gatsby-mdx-starter-blog"
+          style={{ textDecoration: "none" }}
+          aria-label="Source Code"
+        >
+          <b>✨ Source code ✨</b>
+        </Link>
 
         <div className="posts">
           {posts.map(post => {
             return (
               <div key={post.node.id}>
-                <h4 className="post-title-homepage">
+                <h3 className="post-title-homepage" aria-label={`${post.node.frontmatter.title}`}>
                   <Link to={post.node.fields.slug}>
                     {post.node.frontmatter.title}
                   </Link>
-                </h4>
+                </h3>
                 <span style={{ fontSize: "13px" }}>
                   <span>
                     In{" "}

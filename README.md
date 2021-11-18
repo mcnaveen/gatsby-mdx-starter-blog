@@ -7,9 +7,8 @@ Gatsby Starter Blog with Mdx support
 
 ![](./screenshot.png)
 
-### 🚀 Demo: [Click Here](https://gatsby-mdx-starter.netlify.app/)
+###  [🚀 Launch Demo](https://gatsby-mdx-starter.netlify.app/)
 
-- Demo hosted on Netlify
 ### 🍨 Features:
 
 - [x] Gatsby
@@ -20,7 +19,13 @@ Gatsby Starter Blog with Mdx support
 - [x] PWA
 - [x] Offline Support
 - [x] Built-in Sitemap
+- [x] Custom 404 page
+- [x] Basic SEO Implementation with React Helmet
 - [x] 7 Sample post in two different categories
+
+### 🌀 Lighthouse Score
+
+![](./lighthouse-score.png)
 
 ### 🗂️ Development
 
@@ -51,7 +56,7 @@ gatsby build
 
 ### 🍥 Todo
 
-- [ ] Included React Helmet, But not configured yet
+- [ ] Included React Helmet, But not fully configured yet for SEO
 
 ### 🛡️ License
 - MIT

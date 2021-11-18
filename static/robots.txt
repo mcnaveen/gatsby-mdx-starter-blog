@@ -1,0 +1,13 @@
+User-agent: *
+
+User-agent: Mediapartners-Google*
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /
+ 
+User-agent: Googlebot-Mobile
+Allow: /
+
+
+Sitemap: https://gatsby-mdx-starter.netlify.app/sitemap-index.xml
