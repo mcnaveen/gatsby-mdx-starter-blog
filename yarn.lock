@@ -6869,10 +6869,10 @@ gatsby-plugin-preconnect@^1.3.0:
   dependencies:
     "@babel/runtime" "^7.4.3"
 
-gatsby-plugin-react-helmet-async@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet-async/-/gatsby-plugin-react-helmet-async-1.2.1.tgz#dbbedbbf88fff070ed81015f9cbb74c5610bffb9"
-  integrity sha512-CSqV0tMFbnN5tDEwqydR1Jvlzv+1yrTHfMePq0s4dcfcdybI1Yl4HTo52qzT2bYag6/io1HRuejTS5//8YJrNg==
+gatsby-plugin-react-helmet-async@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet-async/-/gatsby-plugin-react-helmet-async-1.2.2.tgz#9c5069fd6b523c19932b53e92d62c4441a9e1220"
+  integrity sha512-CuzmTGB1g2Qv5JTWxQctH9Vs1bnmmzXadHMt/IjXh+u/P9nlGVG4MHN5/KXoBOXy/wOpLfX1oIXUUsQbpQ4TWA==
 
 gatsby-plugin-sharp@^4.14.1:
   version "4.14.1"
